@@ -21,28 +21,15 @@ public class HomeTest extends TestBaseService {
 		objHome.reparationInfo();
 	  }
 
-	/*@Test(priority=11,description="verify fiter ")
+	
+	@Test(priority=9,description="verifynew column ")
 
-	  public void verifyingResultFilter()
+	  public void verifyingColumnView()
 	  {
 		 objHome=new HomePage(driver);
-		objHome.filterSelection();
-	  }*/
-	/*@Test(priority=12,description="verify new verify filter")
-
-	  public void verifyingEmailr()
-	  {
-		 objHome=new HomePage(driver);
-	objHome.scrollEmail();
+objHome.waitColumn();
 	  }
-	@Test(priority=12,description="verify new verify filter")
-
-	  public void verifyingMessage()
-	  {
-		 objHome=new HomePage(driver);
-	objHome.typeMessage();
-	  }*/
-
+	
 	
 	@Test(priority=12,description="verify new verify filter")
 
@@ -62,17 +49,56 @@ public class HomeTest extends TestBaseService {
 	  }
 	
 	
-/*	@Test(priority=8,description="verifynew column ")
+@Test(priority=8,description="verifynew column ")
 
 	  public void verifyingnewColumn()
 	  {
 		 objHome=new HomePage(driver);
 	objHome.newColumSelection();
 	  }
-	
-	
+@Test(priority=10,description="verify showdrop")
 
-	@Test(priority=9,description="verifynew column ")
+public void verifyingshowdroping()
+{
+	 objHome=new HomePage(driver);
+	
+	objHome.showSelection(Constants.SHOWCOUNNTINDEX);
+	//Assert.assertEquals(objHome.gettingShoeSelectionText(), Constants.SHOWCOUNTTEXT);
+	Assert.assertEquals(objHome.gettingShoeSelectionText(), Constants.SHOWCOUNTTEXT);
+	
+}
+
+/*@Test(priority=11,description="verifynew addplus ")
+
+public void verifyingaddrep()
+{
+	 objHome=new HomePage(driver);
+objHome.plusReparationISelection();
+}
+
+@Test(priority=12,description="verifynew neww addplus ")
+
+public void verifyingnewaddrep()
+{
+	 objHome=new HomePage(driver);
+objHome.newPlusReparation();
+}
+/*@Test(priority=13,description="verifynew column ")
+
+public void verifyingnewmapka()
+{
+	 objHome=new HomePage(driver);
+objHome.waitForElement();
+}
+
+@Test(priority=14,description="verifynew column ")
+
+public void verifyingentermapka()
+{
+	 objHome=new HomePage(driver);
+objHome.mapkaenter();
+}
+	/*@Test(priority=9,description="verifynew column ")
 
 	  public void verifyingInternal()
 	  {
@@ -96,19 +122,9 @@ public class HomeTest extends TestBaseService {
 		objHome.newStatusSelection();
 	  }*/
 	
-	@Test(priority=8,description="verify showdrop")
+	
 
-	  public void verifyingshowdroping()
-	  {
-		 objHome=new HomePage(driver);
-		
-		objHome.showSelection(Constants.SHOWCOUNNTINDEX);
-		//Assert.assertEquals(objHome.gettingShoeSelectionText(), Constants.SHOWCOUNTTEXT);
-		Assert.assertEquals(objHome.gettingShoeSelectionText(), Constants.SHOWCOUNTTEXT);
-		
-	  }
-
-	@Test(priority=12,description="verify addreparation ")
+/*	@Test(priority=12,description="verify addreparation ")
 
 	  public void verifyingaddreparation()
 	  {
@@ -150,6 +166,27 @@ public class HomeTest extends TestBaseService {
 		objHome.powerbuttonselection();
 	  }
 */
+/*@Test(priority=11,description="verify fiter ")
+
+public void verifyingResultFilter()
+{
+	 objHome=new HomePage(driver);
+	objHome.filterSelection();
+}*/
+/*@Test(priority=12,description="verify new verify filter")
+
+public void verifyingEmailr()
+{
+	 objHome=new HomePage(driver);
+objHome.scrollEmail();
+}
+@Test(priority=12,description="verify new verify filter")
+
+public void verifyingMessage()
+{
+	 objHome=new HomePage(driver);
+objHome.typeMessage();
+}*/
 	
 }
 	

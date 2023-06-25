@@ -9,9 +9,9 @@ public class Constants {
 	public static final String LOGINTITLE="Login";
 	public static final String HOMETITLE="Home";
 
-	public static final int SHOWCOUNNTINDEX=5;
+	public static final int SHOWCOUNNTINDEX=0;
 			
-  public static final String SHOWCOUNTTEXT="All";
+  public static final String SHOWCOUNTTEXT="10";
 	
 	
 

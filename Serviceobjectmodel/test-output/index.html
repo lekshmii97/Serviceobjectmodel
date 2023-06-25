@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,31 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Serviceobjectmodel.Scripts.HomeTest" class="method navigator-link" hash-for-method="verifyingaddreparation">verifyingaddreparation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Serviceobjectmodel.Scripts.HomeTest" class="method navigator-link" hash-for-method="verifyingaddreparationtab">verifyingaddreparationtab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Serviceobjectmodel.Scripts.HomeTest" class="method navigator-link" hash-for-method="verifyingshowdroping">verifyingshowdroping</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -152,12 +128,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Serviceobjectmodel.Scripts.HomeTest" class="method navigator-link" hash-for-method="verifyingColumnView">verifyingColumnView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.Serviceobjectmodel.Scripts.HomeTest" class="method navigator-link" hash-for-method="verifyingNewResultFilter">verifyingNewResultFilter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.Serviceobjectmodel.Scripts.HomeTest" class="method navigator-link" hash-for-method="verifyingReparation">verifyingReparation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Serviceobjectmodel.Scripts.HomeTest" class="method navigator-link" hash-for-method="verifyingnewColumn">verifyingnewColumn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Serviceobjectmodel.Scripts.HomeTest" class="method navigator-link" hash-for-method="verifyingshowdroping">verifyingshowdroping</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -172,107 +163,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.Serviceobjectmodel.Scripts.HomeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyingaddreparation">
-                  </a> <!-- verifyingaddreparation -->
-                  <span class="method-name">verifyingaddreparation</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button href=&quot;#reparationmodal&quot; class=&quot;add_reparation btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (328, 205). Other element would receive the click: &lt;div class=&quot;dt-button-background&quot; style=&quot;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=113.0.5672.93)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [41925a5b57db6b7a9c142dad16fb1619, clickElement {id=34FEADC22FE86593B58520C808B80A6F_element_114}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Zartech\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64627}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64627/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (41925a5b57db6b7a9c142dad16fb1619)] -&gt; xpath: //button[starts-with(@class,&apos;add_reparation &apos;)]]
-Session ID: 41925a5b57db6b7a9c142dad16fb1619
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
-	at com.Serviceobjectmodel.Utilities.PageUtilities.clickOnElement(PageUtilities.java:41)
-	at com.Serviceobjectmodel.Pages.HomePage.addReparationSelection(HomePage.java:168)
-	at com.Serviceobjectmodel.Scripts.HomeTest.verifyingaddreparation(HomeTest.java:116)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(verify addreparation )                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyingaddreparationtab">
-                  </a> <!-- verifyingaddreparationtab -->
-                  <span class="method-name">verifyingaddreparationtab</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;reparationmodal&apos; and @class=&apos;modal fade in&apos;]/div/div&quot;}
-  (Session info: chrome=113.0.5672.93)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [41925a5b57db6b7a9c142dad16fb1619, findElement {using=xpath, value=//div[@id=&apos;reparationmodal&apos; and @class=&apos;modal fade in&apos;]/div/div}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Zartech\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64627}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64627/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 41925a5b57db6b7a9c142dad16fb1619
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy22.isSelected(Unknown Source)
-	at com.Serviceobjectmodel.Pages.HomePage.newaddedReparationSelection(HomePage.java:173)
-	at com.Serviceobjectmodel.Scripts.HomeTest.verifyingaddreparationtab(HomeTest.java:123)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(verify addReparation tab )                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyingshowdroping">
-                  </a> <!-- verifyingshowdroping -->
-                  <span class="method-name">verifyingshowdroping</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 5
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:305)
-	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
-	at com.Serviceobjectmodel.Pages.HomePage.showSelection(HomePage.java:159)
-	at com.Serviceobjectmodel.Scripts.HomeTest.verifyingshowdroping(HomeTest.java:105)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(verify showdrop)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -330,6 +220,15 @@ Driver info: driver.version: unknown
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyingColumnView">
+                  </a> <!-- verifyingColumnView -->
+                  <span class="method-name">verifyingColumnView</span>
+                  <em>
+(verifynew column )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyingNewResultFilter">
                   </a> <!-- verifyingNewResultFilter -->
                   <span class="method-name">verifyingNewResultFilter</span>
@@ -344,6 +243,24 @@ Driver info: driver.version: unknown
                   <span class="method-name">verifyingReparation</span>
                   <em>
 (verify more info of Reparation tab )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyingnewColumn">
+                  </a> <!-- verifyingnewColumn -->
+                  <span class="method-name">verifyingnewColumn</span>
+                  <em>
+(verifynew column )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyingshowdroping">
+                  </a> <!-- verifyingshowdroping -->
+                  <span class="method-name">verifyingshowdroping</span>
+                  <em>
+(verify showdrop)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -418,48 +335,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyingReparation')
 data.setCell(0, 2, 'com.Serviceobjectmodel.Scripts.HomeTest')
-data.setCell(0, 3, 4357);
+data.setCell(0, 3, 3710);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifySigninValidUserValidpass')
 data.setCell(1, 2, 'com.Serviceobjectmodel.Scripts.ServiceLoginTest')
-data.setCell(1, 3, 2702);
+data.setCell(1, 3, 2539);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySigninInvalidUserValidpass')
+data.setCell(2, 1, 'verifySigninInvalidUserInvalidpass')
 data.setCell(2, 2, 'com.Serviceobjectmodel.Scripts.ServiceLoginTest')
-data.setCell(2, 3, 1215);
+data.setCell(2, 3, 761);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifySigninInvalidUserInvalidpass')
+data.setCell(3, 1, 'verifySigninInvalidUserValidpass')
 data.setCell(3, 2, 'com.Serviceobjectmodel.Scripts.ServiceLoginTest')
-data.setCell(3, 3, 1135);
+data.setCell(3, 3, 628);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyingaddreparation')
-data.setCell(4, 2, 'com.Serviceobjectmodel.Scripts.HomeTest')
-data.setCell(4, 3, 1125);
+data.setCell(4, 1, 'verifySigninValidUserInvalidpass')
+data.setCell(4, 2, 'com.Serviceobjectmodel.Scripts.ServiceLoginTest')
+data.setCell(4, 3, 611);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifySigninValidUserInvalidpass')
-data.setCell(5, 2, 'com.Serviceobjectmodel.Scripts.ServiceLoginTest')
-data.setCell(5, 3, 896);
+data.setCell(5, 1, 'verifyingColumnView')
+data.setCell(5, 2, 'com.Serviceobjectmodel.Scripts.HomeTest')
+data.setCell(5, 3, 273);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyingshowdroping')
 data.setCell(6, 2, 'com.Serviceobjectmodel.Scripts.HomeTest')
-data.setCell(6, 3, 497);
+data.setCell(6, 3, 170);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyingColumn')
 data.setCell(7, 2, 'com.Serviceobjectmodel.Scripts.HomeTest')
-data.setCell(7, 3, 472);
+data.setCell(7, 3, 156);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyingNewResultFilter')
+data.setCell(8, 1, 'verifyingnewColumn')
 data.setCell(8, 2, 'com.Serviceobjectmodel.Scripts.HomeTest')
-data.setCell(8, 3, 53);
+data.setCell(8, 3, 36);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyingaddreparationtab')
+data.setCell(9, 1, 'verifyingNewResultFilter')
 data.setCell(9, 2, 'com.Serviceobjectmodel.Scripts.HomeTest')
-data.setCell(9, 3, 24);
+data.setCell(9, 3, 29);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -480,9 +397,9 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.Serviceobjectmodel.Scripts.ServiceLoginTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
                 <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -513,100 +430,97 @@ return data;
               <div class="chronological-class-name">com.Serviceobjectmodel.Scripts.ServiceLoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifySigninInvalidUserInvalidpass(user@user.com, namesofuser)</span>
-                <span class="method-start">8390 ms</span>
+                <span class="method-start">8385 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifySigninInvalidUserInvalidpass status=SUCCESS method=ServiceLoginTest.verifySig...)</span>
-                <span class="method-start">9540 ms</span>
+                <span class="method-start">9155 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifySigninInvalidUserValidpass(life@life.com, password)</span>
-                <span class="method-start">9668 ms</span>
+                <span class="method-start">9233 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifySigninInvalidUserValidpass status=SUCCESS method=ServiceLoginTest.verifySigni...)</span>
-                <span class="method-start">10888 ms</span>
+                <span class="method-start">9862 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifySigninValidUserInvalidpass(admin@admin.com, nameoflife)</span>
-                <span class="method-start">10991 ms</span>
+                <span class="method-start">9918 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifySigninValidUserInvalidpass status=SUCCESS method=ServiceLoginTest.verifySigni...)</span>
-                <span class="method-start">11892 ms</span>
+                <span class="method-start">10531 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifySigninValidUserValidpass(admin@admin.com, password)</span>
-                <span class="method-start">11998 ms</span>
+                <span class="method-start">10593 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifySigninValidUserValidpass status=SUCCESS method=ServiceLoginTest.verifySigninV...)</span>
-                <span class="method-start">14705 ms</span>
+                <span class="method-start">13141 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Serviceobjectmodel.Scripts.HomeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyingReparation</span>
-                <span class="method-start">14709 ms</span>
+                <span class="method-start">13142 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyingReparation status=SUCCESS method=HomeTest.verifyingReparation()[pri:6, ins...)</span>
-                <span class="method-start">19068 ms</span>
+                <span class="method-start">16856 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyingColumn</span>
-                <span class="method-start">19070 ms</span>
+                <span class="method-start">16858 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyingColumn status=SUCCESS method=HomeTest.verifyingColumn()[pri:7, instance:co...)</span>
-                <span class="method-start">19546 ms</span>
+                <span class="method-start">17020 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyingshowdroping</span>
-                <span class="method-start">19549 ms</span>
+                <span class="method-name">verifyingnewColumn</span>
+                <span class="method-start">17022 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyingshowdroping status=FAILURE method=HomeTest.verifyingshowdroping()[pri:8, i...)</span>
-                <span class="method-start">20066 ms</span>
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyingnewColumn status=SUCCESS method=HomeTest.verifyingnewColumn()[pri:8, insta...)</span>
+                <span class="method-start">17063 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyingColumnView</span>
+                <span class="method-start">17065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyingColumnView status=SUCCESS method=HomeTest.verifyingColumnView()[pri:9, ins...)</span>
+                <span class="method-start">17344 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyingshowdroping</span>
+                <span class="method-start">17354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyingshowdroping status=SUCCESS method=HomeTest.verifyingshowdroping()[pri:10, ...)</span>
+                <span class="method-start">17526 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyingNewResultFilter</span>
-                <span class="method-start">20266 ms</span>
+                <span class="method-start">17527 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyingNewResultFilter status=SUCCESS method=HomeTest.verifyingNewResultFilter()[...)</span>
-                <span class="method-start">20323 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyingaddreparation</span>
-                <span class="method-start">20325 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyingaddreparation status=FAILURE method=HomeTest.verifyingaddreparation()[pri:...)</span>
-                <span class="method-start">21464 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyingaddreparationtab</span>
-                <span class="method-start">21608 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyingaddreparationtab status=FAILURE method=HomeTest.verifyingaddreparationtab(...)</span>
-                <span class="method-start">21638 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Serviceobjectmodel.Base.TestBaseService</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">21760 ms</span>
+                <span class="method-start">17558 ms</span>
               </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Serviceobjectmodel.Scripts.HomeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyingNewResultFilter status=SUCCESS method=HomeTest.verifyingNewResultFilter()[...)</span>
+                <span class="method-start">17558 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

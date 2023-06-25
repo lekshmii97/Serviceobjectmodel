@@ -9,12 +9,11 @@
     <classes>
       <class name="com.Serviceobjectmodel.Scripts.HomeTest">
         <methods>
+          <include name="verifyingaddrep"/>
           <include name="beforeTest"/>
           <include name="takeScreenShotOnFailure"/>
-          <include name="verifyingshowdroping"/>
+          <include name="verifyingnewaddrep"/>
           <include name="afterTest"/>
-          <include name="verifyingaddreparation"/>
-          <include name="verifyingaddreparationtab"/>
         </methods>
       </class> <!-- com.Serviceobjectmodel.Scripts.HomeTest -->
     </classes>
