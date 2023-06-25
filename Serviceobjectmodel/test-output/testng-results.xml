@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="14" passed="7" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-25T14:35:58 IST" name="Suite" finished-at="2023-06-25T14:36:20 IST" duration-ms="22080">
+    <groups>
+      <group name="smoke">
+        <method signature="ServiceLoginTest.verifySigninInvalidUserInvalidpass(java.lang.String,java.lang.String)[pri:1, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6]" name="verifySigninInvalidUserInvalidpass" class="com.Serviceobjectmodel.Scripts.ServiceLoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-06-25T14:35:58 IST" name="Test" finished-at="2023-06-25T14:36:20 IST" duration-ms="22080">
+      <class name="com.Serviceobjectmodel.Base.TestBaseService">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.Serviceobjectmodel.Base.TestBaseService@7bab3f1a]" started-at="2023-06-25T14:35:58 IST" name="beforeTest" finished-at="2023-06-25T14:36:05 IST" duration-ms="6900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.Serviceobjectmodel.Base.TestBaseService@7bab3f1a]" started-at="2023-06-25T14:36:20 IST" name="afterTest" finished-at="2023-06-25T14:36:20 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.Serviceobjectmodel.Base.TestBaseService -->
+      <class name="com.Serviceobjectmodel.Scripts.ServiceLoginTest">
+        <test-method signature="verifySigninInvalidUserInvalidpass(java.lang.String,java.lang.String)[pri:1, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6]" started-at="2023-06-25T14:36:06 IST" name="verifySigninInvalidUserInvalidpass" data-provider="invalidUserInvalidPassword" finished-at="2023-06-25T14:36:07 IST" duration-ms="1135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user@user.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[namesofuser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySigninInvalidUserInvalidpass -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6]" started-at="2023-06-25T14:36:07 IST" name="takeScreenShotOnFailure" finished-at="2023-06-25T14:36:07 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySigninInvalidUserInvalidpass status=SUCCESS method=ServiceLoginTest.verifySigninInvalidUserInvalidpass(java.lang.String,java.lang.String)[pri:1, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifySigninInvalidUserValidpass(java.lang.String,java.lang.String)[pri:2, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6]" started-at="2023-06-25T14:36:08 IST" name="verifySigninInvalidUserValidpass" data-provider="invalidUserValidpassword" finished-at="2023-06-25T14:36:09 IST" duration-ms="1215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[life@life.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySigninInvalidUserValidpass -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6]" started-at="2023-06-25T14:36:09 IST" name="takeScreenShotOnFailure" finished-at="2023-06-25T14:36:09 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySigninInvalidUserValidpass status=SUCCESS method=ServiceLoginTest.verifySigninInvalidUserValidpass(java.lang.String,java.lang.String)[pri:2, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifySigninValidUserInvalidpass(java.lang.String,java.lang.String)[pri:3, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6]" started-at="2023-06-25T14:36:09 IST" name="verifySigninValidUserInvalidpass" data-provider="validUserInvalidPassword" finished-at="2023-06-25T14:36:10 IST" duration-ms="896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nameoflife]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySigninValidUserInvalidpass -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6]" started-at="2023-06-25T14:36:10 IST" name="takeScreenShotOnFailure" finished-at="2023-06-25T14:36:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySigninValidUserInvalidpass status=SUCCESS method=ServiceLoginTest.verifySigninValidUserInvalidpass(java.lang.String,java.lang.String)[pri:3, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifySigninValidUserValidpass(java.lang.String,java.lang.String)[pri:4, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6]" started-at="2023-06-25T14:36:10 IST" name="verifySigninValidUserValidpass" data-provider="validUserValidpassword" finished-at="2023-06-25T14:36:13 IST" duration-ms="2702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySigninValidUserValidpass -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6]" started-at="2023-06-25T14:36:13 IST" name="takeScreenShotOnFailure" finished-at="2023-06-25T14:36:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySigninValidUserValidpass status=SUCCESS method=ServiceLoginTest.verifySigninValidUserValidpass(java.lang.String,java.lang.String)[pri:4, instance:com.Serviceobjectmodel.Scripts.ServiceLoginTest@27f981c6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+      </class> <!-- com.Serviceobjectmodel.Scripts.ServiceLoginTest -->
+      <class name="com.Serviceobjectmodel.Scripts.HomeTest">
+        <test-method signature="verifyingReparation()[pri:6, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:13 IST" name="verifyingReparation" description="verify more info of Reparation tab " finished-at="2023-06-25T14:36:17 IST" duration-ms="4357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingReparation -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:17 IST" name="takeScreenShotOnFailure" finished-at="2023-06-25T14:36:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyingReparation status=SUCCESS method=HomeTest.verifyingReparation()[pri:6, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyingColumn()[pri:7, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:17 IST" name="verifyingColumn" description="verify column " finished-at="2023-06-25T14:36:17 IST" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingColumn -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:17 IST" name="takeScreenShotOnFailure" finished-at="2023-06-25T14:36:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyingColumn status=SUCCESS method=HomeTest.verifyingColumn()[pri:7, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyingshowdroping()[pri:8, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:17 IST" name="verifyingshowdroping" description="verify showdrop" finished-at="2023-06-25T14:36:18 IST" duration-ms="497" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with index: 5
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 5
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:305)
+at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
+at com.Serviceobjectmodel.Pages.HomePage.showSelection(HomePage.java:159)
+at com.Serviceobjectmodel.Scripts.HomeTest.verifyingshowdroping(HomeTest.java:105)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingshowdroping -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:18 IST" name="takeScreenShotOnFailure" finished-at="2023-06-25T14:36:18 IST" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyingshowdroping status=FAILURE method=HomeTest.verifyingshowdroping()[pri:8, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyingNewResultFilter()[pri:12, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:18 IST" name="verifyingNewResultFilter" description="verify new verify filter" finished-at="2023-06-25T14:36:18 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingNewResultFilter -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:18 IST" name="takeScreenShotOnFailure" finished-at="2023-06-25T14:36:18 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyingNewResultFilter status=SUCCESS method=HomeTest.verifyingNewResultFilter()[pri:12, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyingaddreparation()[pri:12, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:18 IST" name="verifyingaddreparation" description="verify addreparation " finished-at="2023-06-25T14:36:19 IST" duration-ms="1125" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button href="#reparationmodal" class="add_reparation btn btn-primary">...</button> is not clickable at point (328, 205). Other element would receive the click: <div class="dt-button-background" style=""></div>
+  (Session info: chrome=113.0.5672.93)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41925a5b57db6b7a9c142dad16fb1619, clickElement {id=34FEADC22FE86593B58520C808B80A6F_element_114}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Zartech\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64627}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64627/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (41925a5b57db6b7a9c142dad16fb1619)] -> xpath: //button[starts-with(@class,'add_reparation ')]]
+Session ID: 41925a5b57db6b7a9c142dad16fb1619]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button href="#reparationmodal" class="add_reparation btn btn-primary">...</button> is not clickable at point (328, 205). Other element would receive the click: <div class="dt-button-background" style=""></div>
+  (Session info: chrome=113.0.5672.93)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41925a5b57db6b7a9c142dad16fb1619, clickElement {id=34FEADC22FE86593B58520C808B80A6F_element_114}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Zartech\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64627}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64627/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (41925a5b57db6b7a9c142dad16fb1619)] -> xpath: //button[starts-with(@class,'add_reparation ')]]
+Session ID: 41925a5b57db6b7a9c142dad16fb1619
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at com.Serviceobjectmodel.Utilities.PageUtilities.clickOnElement(PageUtilities.java:41)
+at com.Serviceobjectmodel.Pages.HomePage.addReparationSelection(HomePage.java:168)
+at com.Serviceobjectmodel.Scripts.HomeTest.verifyingaddreparation(HomeTest.java:116)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingaddreparation -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:19 IST" name="takeScreenShotOnFailure" finished-at="2023-06-25T14:36:20 IST" duration-ms="142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyingaddreparation status=FAILURE method=HomeTest.verifyingaddreparation()[pri:12, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyingaddreparationtab()[pri:13, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:20 IST" name="verifyingaddreparationtab" description="verify addReparation tab " finished-at="2023-06-25T14:36:20 IST" duration-ms="24" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='reparationmodal' and @class='modal fade in']/div/div"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41925a5b57db6b7a9c142dad16fb1619, findElement {using=xpath, value=//div[@id='reparationmodal' and @class='modal fade in']/div/div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Zartech\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64627}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64627/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41925a5b57db6b7a9c142dad16fb1619]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='reparationmodal' and @class='modal fade in']/div/div"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41925a5b57db6b7a9c142dad16fb1619, findElement {using=xpath, value=//div[@id='reparationmodal' and @class='modal fade in']/div/div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Zartech\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64627}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64627/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41925a5b57db6b7a9c142dad16fb1619
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy22.isSelected(Unknown Source)
+at com.Serviceobjectmodel.Pages.HomePage.newaddedReparationSelection(HomePage.java:173)
+at com.Serviceobjectmodel.Scripts.HomeTest.verifyingaddreparationtab(HomeTest.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingaddreparationtab -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f]" started-at="2023-06-25T14:36:20 IST" name="takeScreenShotOnFailure" finished-at="2023-06-25T14:36:20 IST" duration-ms="121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyingaddreparationtab status=FAILURE method=HomeTest.verifyingaddreparationtab()[pri:13, instance:com.Serviceobjectmodel.Scripts.HomeTest@1b11171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+      </class> <!-- com.Serviceobjectmodel.Scripts.HomeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
