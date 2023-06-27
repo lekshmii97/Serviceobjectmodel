@@ -1,8 +1,8 @@
-package com.Serviceobjectmodel.ExtentReport;
+package com.Serviceobjectmodel.ExtentReport;                        //to set the directory
 
-import java.io.File;
+import java.io.File;                                          //what are the testcases failed and passed
 
-import org.openqa.selenium.Platform;
+import org.openqa.selenium.Platform;                                         //encapsulation
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;

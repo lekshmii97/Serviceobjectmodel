@@ -1,9 +1,8 @@
 package com.Serviceobjectmodel.Scripts;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
 import com.Serviceobjectmodel.Pages.LoginService;
 import com.Serviceobjectmodel.Utilities.ExcelRead;
 import com.Serviceobjectmodel.constants.Constants;
@@ -21,9 +20,8 @@ public class ServiceLoginTest extends TestBaseService{ //inheritance
 		  objLogin.setUserName(userName);
 		  objLogin.setPassword(password1);
 		  objLogin.clickSignin();
-		  SoftAssert assert1=new SoftAssert();
-		  assert1.assertEquals(driver.getTitle(), Constants.LOGINTITLE);
-		  assert1.assertAll();
+		  Assert.assertEquals(objLogin.verifyLogin(), Constants.LoginPage);
+		 
 		  
 		 
 	  }
@@ -35,9 +33,7 @@ public void verifySigninInvalidUserValidpass(String userName,String password1) {
 	  objLogin.setUserName(userName);
 	  objLogin.setPassword(password1);
 	  objLogin.clickSignin();
-	  SoftAssert assert1=new SoftAssert();
-	  assert1.assertEquals(driver.getTitle(), Constants.LOGINTITLE);
-	  assert1.assertAll();
+	  Assert.assertEquals(objLogin.verifyLogin(), Constants.LoginPage);
 	  
 }
 
@@ -48,9 +44,7 @@ public void verifySigninValidUserInvalidpass(String userName,String password1) {
 	  objLogin.setUserName(userName);
 	  objLogin.setPassword(password1);
 	  objLogin.clickSignin();
-	  SoftAssert assert1=new SoftAssert();
-	  assert1.assertEquals(driver.getTitle(), Constants.LOGINTITLE);
-	  assert1.assertAll();
+	  Assert.assertEquals(objLogin.verifyLogin(), Constants.LoginPage);
 	  
 } 
 
@@ -61,10 +55,7 @@ public void verifySigninValidUserValidpass(String userName,String password1) {
 	  objLogin.setUserName(userName);
 	  objLogin.setPassword(password1);
 	  objLogin.clickSignin();
-	  SoftAssert assert1=new SoftAssert();
-	  assert1.assertEquals(driver.getTitle(), Constants.HOMETITLE);
-	  assert1.assertAll();
-	  
+	  Assert.assertEquals(objLogin.verifyHome(), Constants.HomePage);
 }
 
 

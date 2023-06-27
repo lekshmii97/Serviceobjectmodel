@@ -4,12 +4,12 @@ import java.awt.AWTException;
 import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 
-import org.openqa.selenium.WebDriver;
+
 
 import java.awt.datatransfer.StringSelection;
 public class FileUploadUtilities {
 
-	public void FileUploadUsingRobotClass(WebDriver driver, String path) throws AWTException, InterruptedException {
+	public void FileUploadUsingRobotClass(String path) throws AWTException, InterruptedException {
 	       StringSelection s = new StringSelection(path);
 	       Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);
 	       Robot r = new Robot();

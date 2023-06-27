@@ -13,49 +13,44 @@ public class HomeTest extends TestBaseService {
 	
 	HomePage objHome;
 	
-	@Test(priority=6,description="verify more info of Reparation tab ")
+@Test(priority=6,description="verify more info of Reparation tab ")
 
 	  public void verifyingReparation()
 	  {
 		 objHome=new HomePage(driver);
 		objHome.reparationInfo();
+		Assert.assertTrue(objHome.reparationInfoAssertion());
 	  }
 
+@Test(priority=8,description="verify column button  ")
+
+public void verifyingColumn()
+{
+	 objHome=new HomePage(driver);
+	objHome.columnSelection();
+	Assert.assertTrue(objHome.ColumnSelectionAssertion());
+}
+
+@Test(priority=9,description="verifynew column  ")
+
+public void verifyingnewColumn()
+{
+	 objHome=new HomePage(driver);
+objHome.newColumSelection();
+Assert.assertTrue(objHome.newColumnAssertion());
+}
+
 	
-	@Test(priority=9,description="verifynew column ")
+@Test(priority=10,description="verifynew column singlebuttons")
 
 	  public void verifyingColumnView()
 	  {
 		 objHome=new HomePage(driver);
-objHome.waitColumn();
+objHome.checkBoxColumn();
+Assert.assertTrue(objHome.checkBoxColumnAssertion());
 	  }
 	
-	
-	@Test(priority=12,description="verify new verify filter")
 
-	  public void verifyingNewResultFilter()
-	  {
-		 objHome=new HomePage(driver);
-	objHome.newfilterSelection();
-	  }
-
-	
-	@Test(priority=7,description="verify column ")
-
-	  public void verifyingColumn()
-	  {
-		 objHome=new HomePage(driver);
-		objHome.columnSelection();
-	  }
-	
-	
-@Test(priority=8,description="verifynew column ")
-
-	  public void verifyingnewColumn()
-	  {
-		 objHome=new HomePage(driver);
-	objHome.newColumSelection();
-	  }
 @Test(priority=10,description="verify showdrop")
 
 public void verifyingshowdroping()
@@ -63,11 +58,128 @@ public void verifyingshowdroping()
 	 objHome=new HomePage(driver);
 	
 	objHome.showSelection(Constants.SHOWCOUNNTINDEX);
-	//Assert.assertEquals(objHome.gettingShoeSelectionText(), Constants.SHOWCOUNTTEXT);
+	
 	Assert.assertEquals(objHome.gettingShoeSelectionText(), Constants.SHOWCOUNTTEXT);
 	
 }
 
+
+@Test(priority=7,description="verify search")
+
+public void verifyingsearch()
+{
+	 objHome=new HomePage(driver);
+	
+	objHome.search(Constants.Searchtext);
+	Assert.assertTrue(objHome.searchrow());
+	
+}
+	
+@Test(description="verify new verify filter")
+
+	  public void verifyingNewResultFilter()
+	  {
+		 objHome=new HomePage(driver);
+	objHome.filterSelection();
+	
+	Assert.assertTrue(objHome.newfilterSelection());
+	  }
+
+	
+
+	
+
+
+@Test(priority=13,description="verify add")
+
+public void verifyingadd()
+{
+	 objHome=new HomePage(driver);
+	objHome.Reparations();
+}
+
+@Test(priority=14,description="verify addclient")
+
+public void verifyingname()
+{
+	 objHome=new HomePage(driver);
+	objHome.addClient();
+	
+}
+
+@Test(priority=15,description="verify nameclient")
+
+public void verifyingnameclient()
+{
+	 objHome=new HomePage(driver);
+	objHome.nameOfclient(Constants.NAME);
+	Assert.assertTrue(objHome.verifYnameassertion());
+	
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+@Test(priority=12,description="verify addpic")
+
+public void verifyingaddpicture()
+{
+	 objHome=new HomePage(driver);
+	objHome.addpicture();
+}
+
+
+@Test(priority=13,description="verify addpicvisibility")
+
+public void verifyingaddpicturevisible()
+{
+	 objHome=new HomePage(driver);
+	objHome.visiblePicture();
+}
+
+
+@Test(priority=14,description="verify upload")
+
+public void verifyingupload()
+{
+	 objHome=new HomePage(driver);
+	objHome.FileUpload();
+	 StringSelection s = new StringSelection("D:\\Screenshot_2019-02-18-19-04-49.png");
+	 
+}
+
+@Test(priority=12,description="verify addclient")
+
+public void verifyingaddclient()
+{
+	 objHome=new HomePage(driver);
+	
+objHome.addClient();
+	
+}
+
+@Test(priority=13,description="verify clientname")
+
+public void verifyingclentname()
+{
+	 objHome=new HomePage(driver);
+	objHome.clientName();
+}
 /*@Test(priority=11,description="verifynew addplus ")
 
 public void verifyingaddrep()
@@ -188,7 +300,7 @@ public void verifyingMessage()
 objHome.typeMessage();
 }*/
 	
-}
+
 	
 	
 	

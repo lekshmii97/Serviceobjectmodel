@@ -19,6 +19,11 @@ public class LoginService {
 	@FindBy(xpath="//input[@name='submit']")
 	WebElement login;
 	
+	@FindBy(xpath="//h1[text()='Home']")
+	WebElement homePage;
+	@FindBy(xpath="//p[text()='Sign in to start your session']")
+	WebElement loginPage;
+	
 	public LoginService(WebDriver driver)                  //giving constructor to pass driver value to findBy
 	{
 		this.driver=driver; //to pass value of driver into @FindBy
@@ -40,6 +45,15 @@ public class LoginService {
 		
 		login.click();
 	}
+	public String verifyHome()
+	{
+		return homePage.getText();
+	}
+	public String verifyLogin()
+	{
+		return loginPage.getText();
+	}
+	
 }
 
 
