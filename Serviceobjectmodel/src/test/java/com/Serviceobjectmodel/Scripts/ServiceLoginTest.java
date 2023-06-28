@@ -10,7 +10,7 @@ import com.Serviceobjectmodel.Base.TestBaseService;
 
 
 
-public class ServiceLoginTest extends TestBaseService{ //inheritance
+public class ServiceLoginTest extends TestBaseService{ //inheritance //description should be added
 	
 	LoginService objLogin; 
 	@Test(dataProvider="invalidUserInvalidPassword",priority=1,groups={"smoke"},retryAnalyzer=com.Serviceobjectmodel.Listeners.RetryAnalyzer.class)

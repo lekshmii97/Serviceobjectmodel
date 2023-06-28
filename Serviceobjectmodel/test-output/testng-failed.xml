@@ -7,40 +7,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.Serviceobjectmodel.Base.TestBaseService">
+      <class name="com.Serviceobjectmodel.Scripts.ProductTest">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- com.Serviceobjectmodel.Base.TestBaseService -->
-      <class name="com.Serviceobjectmodel.Scripts.HomeTest">
-        <methods>
-          <include name="verifyingsearch"/>
-          <include name="verifyingNewResultFilter"/>
-          <include name="verifyingColumn"/>
-          <include name="verifyingColumnView"/>
-          <include name="verifyingadd"/>
           <include name="beforeTest"/>
           <include name="takeScreenShotOnFailure"/>
-          <include name="verifyingshowdroping"/>
-          <include name="verifyingnewColumn"/>
+          <include name="verifyactionClass"/>
           <include name="afterTest"/>
-          <include name="verifyingnameclient"/>
-          <include name="verifyingname"/>
-          <include name="verifyingReparation"/>
         </methods>
-      </class> <!-- com.Serviceobjectmodel.Scripts.HomeTest -->
-      <class name="com.Serviceobjectmodel.Scripts.ServiceLoginTest">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="verifySigninValidUserValidpass"/>
-          <include name="takeScreenShotOnFailure"/>
-          <include name="verifySigninValidUserInvalidpass"/>
-          <include name="afterTest"/>
-          <include name="verifySigninInvalidUserValidpass"/>
-          <include name="verifySigninInvalidUserInvalidpass"/>
-        </methods>
-      </class> <!-- com.Serviceobjectmodel.Scripts.ServiceLoginTest -->
+      </class> <!-- com.Serviceobjectmodel.Scripts.ProductTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -19,6 +19,8 @@ public class Constants {
 	 public static final String NAME="lekshmi";
 	 
 	 public static final String Searchtext="automation";
+	 
+	 public static final String path="https://qalegend.com/mobile_service/panel/inventory";
 
 	
 	

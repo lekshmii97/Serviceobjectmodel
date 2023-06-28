@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	
+
 <listeners>
 		<listener class-name="com.Serviceobjectmodel.Listeners.TestListener"/>
 		</listeners>
@@ -9,8 +9,11 @@
    <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.Serviceobjectmodel.Base.TestBaseService"/>
-      <class name="com.Serviceobjectmodel.Scripts.ServiceLoginTest"/>
+          <class name="com.Serviceobjectmodel.Scripts.ServiceLoginTest"/>
+           
       <class name="com.Serviceobjectmodel.Scripts.HomeTest"/>
+      <class name="com.Serviceobjectmodel.Scripts.ProductTest"/>
+ 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
