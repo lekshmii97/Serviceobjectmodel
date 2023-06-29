@@ -24,8 +24,11 @@ public class ProductPage {
 	WebElement line;
 	
 	@FindBy(xpath="//a[@class='bpo' and @data-html='true']")
-WebElement deleteicon;
-	public 	ProductPage(WebDriver driver)                  //giving constructor to pass driver value to findBy
+    WebElement deleteicon;
+	
+	
+	public 	ProductPage(WebDriver driver)                  
+	
 	{
 		this.driver=driver; 
 		PageFactory.initElements(driver, this);   
@@ -49,5 +52,14 @@ WebElement deleteicon;
 		
 	}
 	
+
+    public void navigation(String urlclient)
+    
+   {
 	
+	driver.navigate().to(urlclient);
+	
+   }
+
+
 }

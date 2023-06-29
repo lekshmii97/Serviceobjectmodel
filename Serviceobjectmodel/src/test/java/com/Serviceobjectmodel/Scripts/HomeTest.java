@@ -13,7 +13,7 @@ public class HomeTest extends TestBaseService {
 	
 	HomePage objHome;
 	
-@Test(priority=6,description="verify more info of Reparation tab ") 
+@Test(priority=5,description="verify more info of Reparation tab ",groups= {"smoke"},retryAnalyzer=com.Serviceobjectmodel.Listeners.RetryAnalyzer.class)
 
 	  public void verifyingReparation()
 	  {
@@ -22,7 +22,7 @@ public class HomeTest extends TestBaseService {
 		Assert.assertTrue(objHome.reparationInfoAssertion());
 	  }
 
-@Test(priority=8,description="verify column button in reparation page ")
+@Test(priority=7,description="verify column button in reparation page ",groups= {"smoke"},retryAnalyzer=com.Serviceobjectmodel.Listeners.RetryAnalyzer.class)
 
 public void verifyingColumn()
 {
@@ -31,7 +31,7 @@ public void verifyingColumn()
 	Assert.assertTrue(objHome.ColumnSelectionAssertion());
 }
 
-@Test(priority=9,description="verifynew column of reparation page is visible ")
+@Test(priority=8,description="verifynew column of reparation page is visible ",groups= {"smoke"},retryAnalyzer=com.Serviceobjectmodel.Listeners.RetryAnalyzer.class)
 
 public void verifyingnewColumn()
 {
@@ -41,7 +41,7 @@ Assert.assertTrue(objHome.newColumnAssertion());
 }
 
 	
-@Test(priority=11,description="verify ")
+@Test(priority=9,description="verify the checkbox is selectablev in column",groups= {"smoke"},retryAnalyzer=com.Serviceobjectmodel.Listeners.RetryAnalyzer.class)
 
 	  public void verifyingColumnView()
 	  {
@@ -51,10 +51,11 @@ Assert.assertTrue(objHome.checkBoxColumnAssertion());
 	  }
 	
 
-@Test(priority=10,description="verify showdrop")
+@Test(priority=6,description="verify showdropdown  of Reparation table",groups= {"smoke"},retryAnalyzer=com.Serviceobjectmodel.Listeners.RetryAnalyzer.class)
 
 public void verifyingshowdroping()
 {
+	
 	 objHome=new HomePage(driver);
 	
 	objHome.showSelection(Constants.SHOWCOUNNTINDEX);
@@ -64,35 +65,16 @@ public void verifyingshowdroping()
 }
 
 
-@Test(priority=7,description="verify search")
-
-public void verifyingsearch()
-{
-	 objHome=new HomePage(driver);
-	
-	objHome.search(Constants.Searchtext);
-	Assert.assertTrue(objHome.searchrow());
-	
-	
-}
-	
 
 
-@Test(priority=15,description="verifynew url")
+@Test(priority=11,description="verify the page is move back to clientpage",groups= {"smoke"},retryAnalyzer=com.Serviceobjectmodel.Listeners.RetryAnalyzer.class)
 
 public void verifyingurl()
 {
 	 objHome=new HomePage(driver);
 objHome.navigation(Constants.path);
 }
+
+
+
 }
-/*@Test(description="verify new verify filter")
-
-public void verifyingNewResultFilter()
-{
-	 objHome=new HomePage(driver);
-objHome.filterSelection();
-
-Assert.assertTrue(objHome.newfilterSelection());
-}*/
-

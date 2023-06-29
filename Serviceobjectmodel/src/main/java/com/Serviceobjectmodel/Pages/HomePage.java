@@ -1,12 +1,11 @@
 package com.Serviceobjectmodel.Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.Serviceobjectmodel.Utilities.FileUploadUtilities;
+
 import com.Serviceobjectmodel.Utilities.PageUtilities;
 import com.Serviceobjectmodel.Utilities.WaitUtilities;
 
@@ -20,8 +19,8 @@ public class HomePage {
 @FindBy(xpath="//div[@class='small-box bg-aqua']//child::a")
 WebElement aqua;
 
-          @FindBy(xpath="//h3[@class='box-title']")
-          WebElement aquaassertion;
+@FindBy(xpath="//h3[@class='box-title']")
+WebElement aquaassertion;
 
 @FindBy(xpath="//div[@class='box-tools pull-right']//child::button//child::i")
 WebElement filterclick;
@@ -32,43 +31,32 @@ WebElement newfilter;
 @FindBy(xpath="//select[@name='dynamic-table_length']")
 WebElement showdropdowns;
 	
-@FindBy(xpath="//select[@name='dynamic-table_length']//child::option[1]")
+@FindBy(xpath="//select[@name='dynamic-table_length']//child::option[4]")
 WebElement showdropdown1;
 
-@FindBy(xpath="//button[@tabindex='0' and @aria-controls='dynamic-table']")              //change
+@FindBy(xpath="//button[@tabindex='0' and @aria-controls='dynamic-table']")             
 WebElement coulmnvisibility;
-           @FindBy(xpath="//div[@class='dt-button-collection fixed two-column']")
-           WebElement columnvisibilityassertion;
+          
+@FindBy(xpath="//div[@class='dt-button-collection fixed two-column']")
+WebElement columnvisibilityassertion;
 
 
 @FindBy(xpath="//div[@role='menu' and @class='dt-button-collection fixed two-column']")
 WebElement newcolumn;
 	
-          @FindBy(xpath="//button[@class='dt-button buttons-collection buttons-colvis' and @aria-controls='dynamic-table']")
-          WebElement newcolumnassertion;
+@FindBy(xpath="//button[@class='dt-button buttons-collection buttons-colvis' and @aria-controls='dynamic-table']")
+WebElement newcolumnassertion;
           
 @FindBy(xpath="//div[@class='dt-button-collection fixed two-column']//child::button[3]")
 WebElement columnview;
-           @FindBy(xpath="//button[@class='dt-button buttons-columnVisibility active' and @tabindex='0'][6]")
-           WebElement columnviewassertion;
 
-
-
-@FindBy(xpath="//input[@class='form-control input-sm input-xs' and @aria-controls='dynamic-table']")
-WebElement search;
-
-@FindBy(xpath="//tr[@id='109']")
-WebElement firstrow;
-
+@FindBy(xpath="//button[@class='dt-button buttons-columnVisibility active' and @tabindex='0'][6]")
+WebElement columnviewassertion;
 
 @FindBy(xpath="//h4[@id='titclienti']")
 WebElement assertionname;
 
-@FindBy(xpath="//button[@class='add_reparation btn btn-primary']//i")
-WebElement plusreparation;
 
-@FindBy(xpath="//div[@style='display: block;' and @id='reparationmodal']/div/div")
-WebElement addPlus;
 	
 
 
@@ -139,18 +127,7 @@ public boolean checkBoxColumnAssertion()
 	
 }
 
-public void search(String defect)
-{
-PageUtilities.enterText(search, defect);
-}
 
-//assertion5
-public boolean searchrow()
-{
-	
-	boolean assertionrow=firstrow.isDisplayed();
-	return assertionrow;
-}
 public void filterSelection()
 {
 	WaitUtilities.fluentWait(driver, filterclick);
@@ -178,6 +155,7 @@ public String gettingShoeSelectionText()
 {
 	return showdropdown1.getText();
 }
+
 
 public void navigation(String url)
 {

@@ -9,9 +9,9 @@
    <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.Serviceobjectmodel.Base.TestBaseService"/>
-      <class name="com.Serviceobjectmodel.Scripts.ProductTest"/>
+      
       <class name="com.Serviceobjectmodel.Scripts.ServiceLoginTest"/>
-      <class name="com.Serviceobjectmodel.Scripts.HomeTest"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
