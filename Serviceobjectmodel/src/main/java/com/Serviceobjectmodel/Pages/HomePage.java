@@ -72,7 +72,7 @@ public void reparationInfo()
 {
 	PageUtilities.clickOnElement(aqua);
 }
-//assertion1
+
 public boolean reparationInfoAssertion()
 {
 	boolean assertion1=aquaassertion.isDisplayed();
@@ -86,7 +86,7 @@ public void columnSelection()
 	
 }
 
-//assertion2
+
 
 public boolean ColumnSelectionAssertion()
 {
@@ -103,7 +103,7 @@ public boolean newColumSelection()
 	return selection;
 }
 
-//assertion3
+
 
 public boolean newColumnAssertion()
 {
@@ -114,11 +114,11 @@ public boolean newColumnAssertion()
 
 public void checkBoxColumn()
 {
-	//WaitUtilities.waitForElementToBeClickable(driver,columnview);
+	
 	PageUtilities.clickOnElement(columnview);
 	
 }
- //assertion4
+ 
 
 public boolean checkBoxColumnAssertion()
 {
